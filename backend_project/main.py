@@ -38,7 +38,7 @@ def add_employee(emp: schemas.EmployeeCreate, db: Session = Depends(get_db)):
     db.add(new_emp)
     db.commit()
     db.refresh(new_emp)
-    return {"message": "Employee added successfully"}
+    return {"message": "Employees added successfully"}
  
  
 @app.get("/employees")
