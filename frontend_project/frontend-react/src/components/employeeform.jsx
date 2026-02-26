@@ -15,7 +15,7 @@ function EmployeeForm() {
     try {
       await API.post("/employees", form);
 
-      alert("Employee added successfully ✅");
+      alert("Employee added successfully ");
 
       setForm({
         employeeId: "",
